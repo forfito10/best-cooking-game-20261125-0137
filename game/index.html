@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#202831">
+<title>Sizzle Lane — Diner Shift</title>
+<style>
+  html, body { margin: 0; min-height: 100%; background: #17202a; }
+  body { min-height: 100vh; display: grid; place-items: center; overflow: hidden; }
+  #game { display: block; width: min(100vw, 160vh); height: min(100vh, 62.5vw); background: #e6bc78; image-rendering: auto; }
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="600" aria-label="Sizzle Lane diner kitchen game"></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
